@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "594368309909",
+    "project_id": "fir-practice-app-eec08",
+    "storage_bucket": "fir-practice-app-eec08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594368309909:android:86e6d65726dc1cdc7c899c",
+        "android_client_info": {
+          "package_name": "com.example.simple_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfBBgjn_7BBr6kqpLxMBjsKFPBptsIXSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
