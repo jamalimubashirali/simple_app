@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_app/auth_services.dart';
+import 'package:simple_app/todo_screen.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
@@ -110,9 +111,8 @@ class _SignUpFormState extends State<SignUpForm> {
                     onPressed: () async{
                       if(_formKey.currentState!.validate()){
                         await auth.signUp(_passwordController.text, _emailController.text);
-                        print("User Created Successfully");
-                        dispose();
                       }
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const TodoScreen()));
                     },
                     child: const Text('Sign Up'),
                   ),
@@ -121,6 +121,7 @@ class _SignUpFormState extends State<SignUpForm> {
                       if(_formKey.currentState!.validate()){
                         await auth.signIn(_passwordController.text, _emailController.text);
                       }
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const TodoScreen()));
                     },
                     child: const Text('Login'),
                   ),
